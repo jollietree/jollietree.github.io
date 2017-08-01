@@ -1,0 +1,82 @@
+.logo-wrap {
+  width: 98px;
+  img {
+    display: block;
+    width: 64px;
+    height: 64px;
+  }
+  .fre-navbar .navbar-header & {
+    display: block !important;
+    width: 80px;
+    height: 32px;
+    margin: 8px 0 0 15px;
+    @include phones {
+      display: none !important;
+    }
+  }
+}
+
+.img-wrap {
+  width: 200%;
+  margin-left: -50%;
+  position: relative;
+  height: auto;
+  @include phones {
+    width: 150%;
+    margin-left: -25%;
+  }
+  @include tablets {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+.item {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.video-wrap {
+  position: relative;
+  background: #000;
+  .container {
+    max-width: 600px;
+    min-width: 360px;
+  }
+}
+
+.split-wrap {
+  background: $fre-dk-blue;
+  color: $white;
+  height: 100%;
+  .tbl {
+    display: block;
+    @include phones {
+      display: table;
+      height: inherit;
+    }
+  }
+  article {
+    display: block;
+    @include phones {
+      display: table-cell;
+      vertical-align: top;
+    }
+    @include tablets {
+      display: table-cell;
+      vertical-align: middle;
+    }
+    h1 {
+      font-size: 2.5em;
+    }
+    h2 {
+      font-size: 20px;
+    }
+    p {
+      font-size: 18px;
+      font-family: $copy;
+    }
+  }
+  section {
+    padding: 12px 24px;
+  }
+}

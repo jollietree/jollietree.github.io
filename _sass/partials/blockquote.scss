@@ -1,0 +1,37 @@
+.fre-blockquote {
+  padding: 20px 0;
+  blockquote {
+    padding: 20px 20px;
+  }
+  &.fre-blockquote-big {
+    background: #fafafa;
+    border-top: 1px solid $lines;
+    border-bottom: 1px solid $lines;
+    padding: 16px 0 32px 0;
+    .fre-quotations {
+      margin: 0 auto;
+      height: 32px;
+      width: 32px;
+      @include phones {
+        height: 68px;
+        width: 68px;
+      }
+      img {
+        opacity: 0.5;
+      }
+    }
+    blockquote {
+      padding: 20px 20px;
+      width: 80%;
+      position: relative;
+      z-index: 200;
+      margin: 0 auto;
+      font-size: 1.0em;
+      border-left: none;
+      text-align: center;
+      @include phones {
+        font-size: 1.6em;
+      }
+    }
+  }
+}
