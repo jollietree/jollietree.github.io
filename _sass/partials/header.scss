@@ -1,0 +1,12 @@
+.top-bar {
+  height: 6px;
+  background: $text;
+  border-bottom: 4px solid $primary;
+}
+
+header {
+  width: 100%;
+  max-width: 1600px;
+  overflow: hidden;
+  margin: 0 auto;
+}
