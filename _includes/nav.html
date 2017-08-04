@@ -1,3 +1,20 @@
+<!-- Navicon -->
+<div class="fre-navicon clearfix" id="navicon">
+  <button class="fre-btn btn-transparent pull-left">
+    <span>
+      <i class="fa fa-navicon fa-lg fa-2x"></i>
+    </span>
+  </button>
+  <div class="fre-tel pull-right">
+    <a href="tel:1-{{ site.tel }}">
+      <span class="fa-stack fa-lg">
+        <i class="fa fa-circle fa-stack-2x"></i>
+        <i class="fa fa-phone fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </div>
+</div>
+<!-- Nav -->
 <nav class="fre-nav">
   <ul>
     <li {% if page.url == "/" %} class="active"{% endif %}>
