@@ -1,0 +1,8 @@
+<div class="fre-banner">
+  {% if page.banner == "image" %}
+    {% include image.html %}
+  {% endif %}
+  {% if page.banner == "split" %}
+    {% include image-split.html %}
+  {% endif %}
+</div>

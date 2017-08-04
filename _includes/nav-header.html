@@ -1,17 +1,17 @@
 <div class="fre-nav-header">
   <div class="container-fluid clearfix">
     <a href="{{ site.baseurl }}/" class="pull-left">
-      <div class="logo-wrap">
+      <!-- <div class="logo-wrap">
         <img src="{{ site.baseurl}}/assets/img/fre.png" alt="fre Logo">
-      </div>
+      </div> -->
     </a>
     <div class="contact-info pull-right">
-      <a href="tel:1-608-206-2834">
+      <a href="tel:1-{{ site.tel }}">
         <span class="fa-stack fa-lg">
           <i class="fa fa-circle fa-stack-2x"></i>
           <i class="fa fa-phone fa-stack-1x fa-inverse"></i>
         </span>
-        608-206-2834
+        {{ site.tel }}
       </a>
     </div>
   </div>
