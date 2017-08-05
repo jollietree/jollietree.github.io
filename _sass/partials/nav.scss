@@ -5,9 +5,10 @@
     display: none;
   }
   a[href^="tel:"] {
-  color: $primary;
-  display: block;
-  padding: 12px 12px 0 0;
+    display: block;
+    padding: 8px 16px;
+    background: $primary;
+    color: $white;
   }
 }
 // Nav
@@ -38,8 +39,14 @@
         text-decoration: none;
         font-size: 16px;
         color: $text;
+        &:hover {
+          color: $primary;
+          background-color: darken($lt-grey, 2.5%);
+        }
       }
-      &.active a{
+      &.active a,
+      &.active a:hover{
+        background-color: darken($lt-grey, 2.5%);
         color: $primary;
       }
     }
@@ -54,7 +61,7 @@
       right: 0;
       padding: 12px 36px;
       font-size: 22px;
-      background: $primary;
+      background-color: $primary;
       color: $white;
   }
 }

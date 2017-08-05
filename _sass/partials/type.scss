@@ -3,11 +3,23 @@ body {
   color: $text;
 }
 .h1,.h2,.h3,.h4,.h5,.h6,
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6,
+dl, dt, dd {
   font-weight: 400;
 
 }
 
+.fre-co-font {
+  font-family: $lato;
+  text-transform: uppercase;
+  color: $primary;
+  span {
+    display: block;
+    text-transform: none;
+    font-size: .65em;
+    color: $white;
+  }
+}
 article {
   padding: 16px 0;
   section {
@@ -24,10 +36,6 @@ article {
       color: $text;
       font-size: 2.0em;
       display: block;
-    }
-    &.fre-biz-font {
-      font-family: $lato;
-      text-transform: uppercase;
     }
   }
   p {

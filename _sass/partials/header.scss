@@ -1,24 +1,24 @@
 header {
-  h1 {
-    text-align: center;
-    color: $primary;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-family: $lato;
-    font-size: 36px;
-    @include phones {
-      font-size: 48px;
-    }
-    @include desktops {
-      font-size: 64px;
-    }
-    white-space: nowrap;
-  }
-  ul {
+  dl {
     display: block;
     padding: 0;
     text-align: center;
-    li {
+    dt {
+      text-align: center;
+      color: $primary;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-family: $lato;
+      font-size: 36px;
+      @include phones {
+        font-size: 48px;
+      }
+      @include desktops {
+        font-size: 64px;
+      }
+      white-space: nowrap;
+    }
+    dd {
       display: inline-block;
       padding-right: 12px;
       color: $primary;
