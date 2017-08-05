@@ -6,12 +6,15 @@
   }
   a[href^="tel:"] {
   color: $primary;
+  display: block;
+  padding: 12px 12px 0 0;
   }
 }
 // Nav
 .fre-nav {
   background-color: $lt-grey;
   display: none;
+  position: relative;
   @include tablets {
     display: block !important;
   }
@@ -19,7 +22,7 @@
     display: block;
     text-align: center;
     vertical-align: middle;
-    margin: 0;
+    padding: 0;
     li {
       display: block;
       @include tablets {
@@ -40,5 +43,18 @@
         color: $primary;
       }
     }
+  }
+    a[href^="tel:"] {
+      display: none;
+      @include tablets {
+        display: block;
+      }
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 12px 36px;
+      font-size: 22px;
+      background: $primary;
+      color: $white;
   }
 }

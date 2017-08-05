@@ -5,14 +5,27 @@ header {
     text-decoration: none;
     text-transform: uppercase;
     font-family: $lato;
-    font-size: 24px;
+    font-size: 36px;
     @include phones {
-      font-size: 36px;
-    }
-    @include desktops {
       font-size: 48px;
     }
+    @include desktops {
+      font-size: 64px;
+    }
     white-space: nowrap;
+  }
+  ul {
+    display: block;
+    padding: 0;
+    text-align: center;
+    li {
+      display: inline-block;
+      padding-right: 12px;
+      color: $primary;
+      font-family: $lato;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
   }
   padding: 6px 0;
   .fre-logo {

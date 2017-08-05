@@ -2,15 +2,16 @@
 <div class="fre-navicon clearfix" id="navicon">
   <button class="fre-btn btn-transparent pull-left">
     <span>
-      <i class="fa fa-navicon fa-lg fa-2x"></i>
+      <i class="fa fa-navicon fa-lg fa-lg"></i>
     </span>
+    MENU
   </button>
   <div class="fre-tel pull-right">
     <a href="tel:1-{{ site.tel }}">
-      <span class="fa-stack fa-lg">
-        <i class="fa fa-circle fa-stack-2x"></i>
-        <i class="fa fa-phone fa-stack-1x fa-inverse"></i>
+      <span>
+        <i class="fa fa-phone"></i>
       </span>
+      {{ site.tel }}
     </a>
   </div>
 </div>
@@ -25,4 +26,10 @@
     {% include list-item.html description='About' permalink='about' %}
     {% include list-item.html description='Contact' permalink='contact' %}
   </ul>
+  <a href="tel:1-{{ site.tel }}">
+    <span>
+      <i class="fa fa-phone"></i>
+    </span>
+    {{site.tel }}
+  </a>
 </nav>
