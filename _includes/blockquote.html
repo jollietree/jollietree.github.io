@@ -1,11 +1,13 @@
-<div class="fre-blockquote {{ if page.blockquote = "big" }}fre-blockquote-big{{ endif }}">
-  {{ if page.blockquote = "big" }}
-  <div class="fre-quotations">
-    <img class="img-responsive" src="{{ site.baseurl }}/assets/img/fre-quotation-marks.png" alt="Quotation Marks">
+<section>
+  <div class="fre-blockquote {{ if page.blockquote = "big" }}fre-blockquote-big{{ endif }}">
+    <div class="fre-quotations">
+      <img class="img-responsive" src="{{ site.baseurl }}/assets/img/fre-quotation-marks.png" alt="Quotation Marks">
+    </div>
+    {% for info in page.blockquote %}
+    <blockquote>
+      <p>{{info.quote}}</p>
+      <footer>{{info.person}} <cite title="Source Title">{{info.location}}</footer>
+      </blockquote>
+    {% endfor %}
   </div>
-  {{ endif }}
-  <blockquote>
-    <p>{{include.quote}}</p>
-    <footer>{{include.person}} <cite title="Source Title">{{include.location}}</footer>
-    </blockquote>
-</div>
+</section>

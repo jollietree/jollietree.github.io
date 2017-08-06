@@ -6,6 +6,9 @@
     {% include header.html %}
     {% include banner.html %}
       {{ content }}
+    {% if page.blockquote %}
+      {% include blockquote.html %}
+    {% endif %}
     {% include footer.html %}
     {% include scripts.html %}
   </body>
