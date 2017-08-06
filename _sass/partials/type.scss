@@ -28,14 +28,18 @@ article {
     &:last-child {
       border-bottom: 1px solid transparent;
     }
-  }
-  h1 {
-    color: $primary;
-    font-size: 24px;
-    &.headline {
+    h1 {
       color: $text;
-      font-size: 2.0em;
-      display: block;
+      font-size: 24px;
+      &.headline {
+        color: $primary;
+        font-size: 2.0em;
+        display: block;
+      }
+    }
+    h2 {
+      color: $text;
+      font-size: 22px;
     }
   }
   p {
@@ -56,8 +60,20 @@ article {
   font-family: $copy;
   .lead {
     font-size: 1.75em;
-    &::first-line {
-      font-size: 2.5em;
+    @include phones {
+      &::first-line {
+        font-size: 1.85em;
+      }
+    }
+    @include tablets {
+      &::first-line {
+        font-size: 2.0em;
+      }
+    }
+    @include desktops {
+      &::first-line {
+        font-size: 2.5em;
+      }
     }
   }
 }

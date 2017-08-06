@@ -8,15 +8,15 @@
   </button>
   <div class="fre-tel pull-right" itemscope itemtype="http://schema.org/HomeAndConstructionBusiness">
     <a href="tel:1-{{ site.tel }}" itemprop="telephone">
-      <span aria-hidden="true">
-        <i class="fa fa-phone"></i>
+      <span>
+        <i class="fa fa-phone" aria-hidden="true"></i>
       </span>
       {{ site.tel }}
     </a>
   </div>
 </div>
 <!-- Nav -->
-<nav class="fre-nav" itemscope itemtype="http://schema.org/HomeAndConstructionBusiness">
+<nav class="fre-nav">
   <ul>
     <li {% if page.url == "/" %} class="active"{% endif %}>
       <a href="{{ site.baseurl }}/">
@@ -26,9 +26,9 @@
     {% include list-item.html description='About' permalink='about' %}
     {% include list-item.html description='Contact' permalink='contact' %}
   </ul>
-  <a href="tel:1-{{ site.tel }}" itemprop="telephone">
-    <span aria-hidden="true">
-      <i class="fa fa-phone"></i>
+  <a href="tel:1-{{ site.tel }}">
+    <span>
+      <i class="fa fa-phone" aria-hidden="true"></i>
     </span>
     {{site.tel }}
   </a>
